@@ -343,4 +343,4 @@ The test suite uses **Jest + Supertest**. The GitHub API and MySQL pool are mock
 
 ---
 
-*Submitted by — MCA Student, MERN Stack Developer · Applying for Backend Node.js Internship at Educase India*
+*Submitted by — MERN Stack Developer · Applying for Backend Node.js Internship at Educase India*
