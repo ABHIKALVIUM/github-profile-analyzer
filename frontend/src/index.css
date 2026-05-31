@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Subtle dot-grid background texture */
+body {
+  background-image: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: #2E333D; border-radius: 3px; }
+
+/* Score ring animation */
+@property --pct {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
