@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import ProfileCard  from "./components/ProfileCard.jsx";
 import HistoryPanel from "./components/HistoryPanel.jsx";
-import useGithubAnalyzer from "./hooks/useGithubAnalyzer"; 
+import { useGithubAnalyzer } from "./hooks/useGithubAnalyzer";
 
 // ─── Spinner ──────────────────────────────────────────────────────────────────
 const Spinner = () => (
