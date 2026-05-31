@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import ProfileCard  from "./components/ProfileCard.jsx";
 import HistoryPanel from "./components/HistoryPanel.jsx";
-import { useGithubAnalyzer } from "./hooks/useGithubAnalyzer";
+import { useGitHubAnalyzer } from "./hooks/useGithubAnalyzer"; // FIXED: Changed variable name inside curly braces to match named hook export precisely
 
 // ─── Spinner ──────────────────────────────────────────────────────────────────
 const Spinner = () => (
@@ -33,8 +33,8 @@ export default function App() {
   const [input, setInput]   = useState("");
   const inputRef            = useRef(null);
   
-  // FIXED: Changed useGitHubAnalyzer to useGithubAnalyzer (lowercase 'b') to match the top import statement
-  const { profile, history, loading, error, analyze, loadHistory } = useGithubAnalyzer();
+  // FIXED: Destructured hook using the correct function name matching your hook file's export syntax
+  const { profile, history, loading, error, analyze, loadHistory } = useGitHubAnalyzer();
 
   // Load history on mount
   useEffect(() => { loadHistory(); }, [loadHistory]);
