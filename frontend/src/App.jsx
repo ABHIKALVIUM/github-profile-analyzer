@@ -32,7 +32,9 @@ const ErrorCard = ({ message }) => (
 export default function App() {
   const [input, setInput]   = useState("");
   const inputRef            = useRef(null);
-  const { profile, history, loading, error, analyze, loadHistory } = useGitHubAnalyzer();
+  
+  // FIXED: Changed useGitHubAnalyzer to useGithubAnalyzer (lowercase 'b') to match the top import statement
+  const { profile, history, loading, error, analyze, loadHistory } = useGithubAnalyzer();
 
   // Load history on mount
   useEffect(() => { loadHistory(); }, [loadHistory]);
@@ -148,7 +150,7 @@ export default function App() {
       {/* ── Footer ── */}
       <footer className="border-t border-border py-6 text-center">
         <p className="text-muted text-xs font-mono">
-          Built with Node.js · Express · MySQL · React · Tailwind CSS
+          Built with Node.js · Express · PostgreSQL · React · Tailwind CSS
           <span className="mx-2">·</span>
           Educase India Assignment © {new Date().getFullYear()}
         </p>
