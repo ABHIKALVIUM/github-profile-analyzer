@@ -342,5 +342,3 @@ The test suite uses **Jest + Supertest**. The GitHub API and MySQL pool are mock
 **Log-scaled scoring** — Prevents celebrity developers from making the metric meaningless for typical users. A developer with 50 repos and 200 followers will score in the 55–65 range, not near zero.
 
 ---
-
-*Submitted by — MERN Stack Developer · Applying for Backend Node.js Internship at Educase India*
